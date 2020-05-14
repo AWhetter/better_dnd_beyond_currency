@@ -1,0 +1,38 @@
+{
+
+	"manifest_version": 2,
+	"name": "Better DND Beyond Currency",
+	"version": "1.0",
+
+	"description": "Changes the behaviour of the currency pane on DND Beyond to use coins of higher value when you don't have enough coins of lower value",
+
+	"icons": {
+		"48": "icons/bag-48.png",
+		"96": "icons/bag-96.png"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["*://www.dndbeyond.com/profile/*/characters/*"],
+			"js": [
+				"browser-polyfill.js",
+				"better_currency.js"
+			]
+		}
+	],
+
+	"options_ui": {
+		"page": "options.html"
+	},
+
+	"permissions": [
+		"storage"
+	],
+
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "{fbf489fe-4380-4a91-a7f0-de557e525d2c}"
+		}
+	}
+
+}
