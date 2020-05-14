@@ -2,9 +2,9 @@
 
 	"manifest_version": 2,
 	"name": "Better DND Beyond Currency",
-	"version": "1.0",
+	"version": "1.0.0",
 
-	"description": "Changes the behaviour of the currency pane on DND Beyond to use coins of higher value when you don't have enough coins of lower value",
+	"description": "Changes the behaviour of the DND Beyond currency pane to use coins of higher value when you don't have enough coins of lower value",
 
 	"icons": {
 		"48": "icons/bag-48.png",
